@@ -27,3 +27,15 @@ Route::post('test/post', function (Request $request) {
 });
 
 Route::get('saber','Controller@method');
+
+
+
+//Route::get('like', function (Request $request) {
+//    $item = new \App\Models\Like;
+//    $item->fill($request->all());
+//    $item->save();
+//    return $item;
+//});
+
+
+Route::get('like','App\Http\Controllers\LikeController@store');
